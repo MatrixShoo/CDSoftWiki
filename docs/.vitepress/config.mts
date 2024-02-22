@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/CDSoftWiki/',
   title: "成大软件Wiki",
   description: "成大软件操作指南",
   themeConfig: {
