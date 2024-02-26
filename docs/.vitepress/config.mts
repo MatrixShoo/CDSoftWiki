@@ -17,6 +17,7 @@ export default defineConfig({
   },
   themeConfig: {
     logo: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/cropped-android-chrome-512x512-2.png',
+    outline:[2,6],
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
