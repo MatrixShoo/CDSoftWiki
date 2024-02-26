@@ -5,6 +5,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "成大软件Wiki",
   description: "成大软件操作指南",
+  head: [['link', { rel: 'icon', href: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/symbol.svg' }]],
   markdown: {
     container: {
       tipLabel: '提示',
