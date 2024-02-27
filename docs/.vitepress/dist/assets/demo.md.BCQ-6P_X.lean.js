@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.DQYIzER3.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"demo.md","filePath":"demo.md","lastUpdated":1708667822000}'),o={name:"demo.md"};function r(s,d,c,n,m,p){return a(),t("div")}const f=e(o,[["render",r]]);export{i as __pageData,f as default};
