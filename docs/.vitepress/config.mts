@@ -86,7 +86,8 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '官网首页', link: 'https://cdsoftcn.com/' },
+      { text: 'Wiki首页', link: '/' },
       { text: '常见问题', link: '/常见问题/∞常见问题处理方法' },
       { text: '营业前台', link: '/营业前台/软件主界面简介' },
       { text: '系统设置', link: '/系统设置/如何增加手牌类型' },
