@@ -87,8 +87,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: '营业前台', link: '/营业前台/软件主界面简介' },
       { text: '常见问题', link: '/常见问题/∞常见问题处理方法' },
+      { text: '营业前台', link: '/营业前台/软件主界面简介' },
+      { text: '系统设置', link: '/系统设置/如何增加手牌类型' },
+      
     ],
 
     sidebar: { // 侧边栏，可以分组
@@ -177,7 +179,27 @@ export default defineConfig({
             }
             ],
           }
-      ]
+      ],
+      "/系统设置/": [
+        {
+            text: "系统后台设置",
+            items: [
+            ],
+        },
+        {
+            text: "系统设置",
+            items: [
+                {
+                    text: "增加手牌类型",
+                    link: "/系统设置/如何增加手牌类型",
+                },
+                {
+                    text: "基础数据导入",
+                    link: "/系统设置/数据导入/基础数据导入",
+                },
+            ],
+        },
+    ]
      
   },  
   }
