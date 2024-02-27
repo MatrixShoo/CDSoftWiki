@@ -81,7 +81,7 @@ export default defineConfig({
       next: '后一篇'
     },
     footer: {
-      message: 'Released under the MIT License.',
+      message: '基于VitePress生成',
       copyright: 'Copyright © 2019-present 杭州成大经纬科技有限责任公司'
     },
     // https://vitepress.dev/reference/default-theme-config
