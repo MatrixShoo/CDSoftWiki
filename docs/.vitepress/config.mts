@@ -209,6 +209,10 @@ export default defineConfig({
             {
               text: "手牌转账",
               link: "/营业前台/桑拿水会/手牌转账",
+            },
+            {
+              text: "收银结算",
+              link: "/营业前台/桑拿水会/收银结算",
             }
             ],
           }
