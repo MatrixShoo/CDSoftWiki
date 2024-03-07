@@ -12,7 +12,7 @@ hero:
       link: /营业前台/软件主界面简介
     - theme: alt
       text: 常见问题
-      link: /常见问题/∞常见问题处理方法
+      link: /常见问题/手牌占用问题
 
 features:
   - title: OTA票务

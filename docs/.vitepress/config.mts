@@ -29,7 +29,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: 'VNUQ9V1AA6',
-        apiKey: '91d0b4cafedfffc8b6043fe056ee4609',
+        apiKey: 'e0dcf1edc5e9313ac13b470967880a4d',
         indexName: 'cdsoftcn',
         locales: {
           zh: {
@@ -88,7 +88,7 @@ export default defineConfig({
     nav: [
       { text: '官网首页', link: 'https://cdsoftcn.com/' },
       { text: 'Wiki首页', link: '/' },
-      { text: '常见问题', link: '/常见问题/∞常见问题处理方法' },
+      { text: '常见问题', link: '/常见问题/手牌占用问题' },
       { text: '营业前台', link: '/营业前台/软件主界面简介' },
       { text: '系统设置', link: '/系统设置/如何增加手牌类型' },
       
@@ -105,12 +105,16 @@ export default defineConfig({
               text: "常见问题",
               items: [
                   {
-                      text: "∞常见问题处理方法",
-                      link: "/常见问题/∞常见问题处理方法",
+                      text: "手牌占用问题",
+                      link: "/常见问题/手牌占用问题",
                   },
                   {
-                      text: "如何修改工号密码",
-                      link: "/常见问题/如何修改工号密码",
+                    text: "手牌刷新问题",
+                    link: "/常见问题/手牌刷新问题",
+                  },
+                  {
+                      text: "如何修改密码",
+                      link: "/常见问题/如何修改密码",
                   },
               ],
           },
