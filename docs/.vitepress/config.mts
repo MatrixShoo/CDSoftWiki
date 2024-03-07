@@ -205,6 +205,10 @@ export default defineConfig({
             {
               text: "查看消费",
               link: "/营业前台/桑拿水会/查看消费",
+            },
+            {
+              text: "手牌转账",
+              link: "/营业前台/桑拿水会/手牌转账",
             }
             ],
           }
