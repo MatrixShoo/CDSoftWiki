@@ -29,7 +29,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: 'VNUQ9V1AA6',
-        apiKey: 'e0dcf1edc5e9313ac13b470967880a4d',
+        apiKey: '91d0b4cafedfffc8b6043fe056ee4609',
         indexName: 'cdsoftcn',
         locales: {
           zh: {
