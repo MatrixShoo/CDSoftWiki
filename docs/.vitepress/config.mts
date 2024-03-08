@@ -7,13 +7,16 @@ export default defineConfig({
   title: "成大软件Wiki",
   description: "成大软件操作指南",
   head: [
+    //网站图标
     ['link', { rel: 'icon', href: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/symbol.svg' }]
   ],
   sitemap: {
     hostname: 'https://wiki.cdsoftcn.com/'
   },
+  //链接去除.html
   cleanUrls:true,
   markdown: {
+    //标记文本显示中文
     container: {
       tipLabel: '提示',
       warningLabel: '警告',
@@ -28,6 +31,7 @@ export default defineConfig({
   },
   themeConfig: {
     logo: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/cropped-android-chrome-512x512-2.png',
+    //页面大纲
     outline:{
       level:[2,6],
       label:'页面导航'
@@ -42,10 +46,13 @@ export default defineConfig({
     //用于自定义侧边栏菜单标签，该标签仅在移动端视图中显示。
     returnToTopLabel:'回到顶部',
     //用于自定义返回顶部按钮的标签，该标签仅在移动端视图中显示。
+
+    //文章底部添加在github上编辑的按钮
     editLink: {
       pattern: 'https://github.com/MatrixShoo/CDSoftWiki/edit/main/docs/:path',
       text: '在GitHub上编辑此文档'
     },
+    //启用最后更新时间
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
@@ -53,6 +60,7 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     },
+    //启用algolia搜索
     search: {
       provider: 'algolia',
       options: {
@@ -104,15 +112,18 @@ export default defineConfig({
         }
       }
     },
+    //页面底部添加前一篇和后一篇按钮
     docFooter: {
       prev: '前一篇',
       next: '后一篇'
     },
+    //添加主页页脚
     footer: {
       message: '<a href="https://vitepress.dev/zh/" target="_blank">基于VitePress生成</a>',
       copyright: 'Copyright © 2024 <a href="https://cdsoftcn.com/" target="_blank">杭州成大经纬科技有限责任公司</a>'
     },
     // https://vitepress.dev/reference/default-theme-config
+    //菜单栏
     nav: [
       { text: '官网首页', link: 'https://cdsoftcn.com/' },
       { text: 'Wiki首页', link: '/' },
@@ -128,7 +139,7 @@ export default defineConfig({
       { text: '系统设置', link: '/系统设置/如何增加手牌类型' },
       
     ],
-
+    //左侧边栏
     sidebar: { // 侧边栏，可以分组
       "/常见问题/": [
           {
@@ -176,15 +187,15 @@ export default defineConfig({
             collapsed: true,
             items: [
             {
-                text: "如何办理会员",
-                link: "/营业前台/会籍管理/如何办理会员",
+              text: "如何办理会员",
+              link: "/营业前台/会籍管理/如何办理会员",
             },
             {
               text: "如何续充会员",
               link: "/营业前台/会籍管理/如何续充会员",
             },
             {
-              text: "会员卡操作",
+              text: "会员相关操作",
               link: "/营业前台/会籍管理/会员卡操作",
             },
             {
