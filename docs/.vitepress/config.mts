@@ -1,11 +1,18 @@
 import { defineConfig } from 'vitepress'
 
+
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
   title: "成大软件Wiki",
   description: "成大软件操作指南",
-  head: [['link', { rel: 'icon', href: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/symbol.svg' }]],
+  head: [
+    ['link', { rel: 'icon', href: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/symbol.svg' }]
+  ],
+  sitemap: {
+    hostname: 'https://wiki.cdsoftcn.com/'
+  },
+  cleanUrls:true,
   markdown: {
     container: {
       tipLabel: '提示',
@@ -13,11 +20,32 @@ export default defineConfig({
       dangerLabel: '危险',
       infoLabel: '信息',
       detailsLabel: '详细信息'
+    },
+    image: {
+      // 默认禁用图片懒加载
+      lazyLoading: true
     }
   },
   themeConfig: {
     logo: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/cropped-android-chrome-512x512-2.png',
-    outline:[2,6],
+    outline:{
+      level:[2,6],
+      label:'页面导航'
+    },
+    darkModeSwitchLabel:'显示模式',
+    //用于自定义深色模式开关标签，该标签仅在移动端视图中显示。
+    lightModeSwitchTitle:'浅色模式',
+    //用于自定义悬停时显示的浅色模式开关标题。
+    darkModeSwitchTitle:'深色模式',
+    //用于自定义悬停时显示的深色模式开关标题。
+    sidebarMenuLabel:'菜单',
+    //用于自定义侧边栏菜单标签，该标签仅在移动端视图中显示。
+    returnToTopLabel:'回到顶部',
+    //用于自定义返回顶部按钮的标签，该标签仅在移动端视图中显示。
+    editLink: {
+      pattern: 'https://github.com/MatrixShoo/CDSoftWiki/edit/main/docs/:path',
+      text: '在GitHub上编辑此文档'
+    },
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
@@ -81,15 +109,22 @@ export default defineConfig({
       next: '后一篇'
     },
     footer: {
-      message: '基于VitePress生成',
-      copyright: 'Copyright © 2019-present 杭州成大经纬科技有限责任公司'
+      message: '<a href="https://vitepress.dev/zh/" target="_blank">基于VitePress生成</a>',
+      copyright: 'Copyright © 2024 <a href="https://cdsoftcn.com/" target="_blank">杭州成大经纬科技有限责任公司</a>'
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '官网首页', link: 'https://cdsoftcn.com/' },
       { text: 'Wiki首页', link: '/' },
       { text: '常见问题', link: '/常见问题/手牌占用问题' },
-      { text: '营业前台', link: '/营业前台/软件主界面简介' },
+      {
+        text: '营业前台',
+        items: [
+          { text: '软件简介', link: '/营业前台/软件主界面简介' },
+          { text: '会籍管理', link: '/营业前台/会籍管理/如何办理会员' },
+          { text: '桑拿水会', link: '/营业前台/桑拿水会/前台开牌' }
+        ]
+      },
       { text: '系统设置', link: '/系统设置/如何增加手牌类型' },
       
     ],
@@ -103,6 +138,7 @@ export default defineConfig({
           },
           {
               text: "常见问题",
+              collapsed: true,
               items: [
                   {
                       text: "手牌占用问题",
@@ -127,6 +163,7 @@ export default defineConfig({
           },
           {
               text: "营业前台",
+              collapsed: true,
               items: [
                   {
                       text: "软件主界面简介",
@@ -136,6 +173,7 @@ export default defineConfig({
           },
           {
             text: "会籍管理",
+            collapsed: true,
             items: [
             {
                 text: "如何办理会员",
@@ -161,6 +199,7 @@ export default defineConfig({
           },
           {
             text: "桑拿水会",
+            collapsed: true,
             items: [
             {
                 text: "前台开牌",
@@ -225,6 +264,7 @@ export default defineConfig({
         },
         {
             text: "系统设置",
+            collapsed: true,
             items: [
                 {
                     text: "增加手牌类型",
