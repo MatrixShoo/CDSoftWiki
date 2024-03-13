@@ -267,6 +267,10 @@ export default defineConfig({
             {
               text: "账单操作",
               link: "/营业前台/桑拿水会/账单操作",
+            },
+            {
+              text: "夜审交班",
+              link: "/营业前台/桑拿水会/夜审交班",
             }
             ],
           }
