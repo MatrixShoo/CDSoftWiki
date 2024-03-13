@@ -263,6 +263,10 @@ export default defineConfig({
             {
               text: "收银结算",
               link: "/营业前台/桑拿水会/收银结算",
+            },
+            {
+              text: "账单操作",
+              link: "/营业前台/桑拿水会/账单操作",
             }
             ],
           }
