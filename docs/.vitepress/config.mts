@@ -289,10 +289,6 @@ export default defineConfig({
                     text: "增加手牌类型",
                     link: "/系统设置/如何增加手牌类型",
                 },
-                {
-                    text: "基础数据导入",
-                    link: "/系统设置/数据导入/基础数据导入",
-                },
             ],
         },
     ]
