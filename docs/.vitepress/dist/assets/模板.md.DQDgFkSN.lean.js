@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as e,a4 as o}from"./chunks/framework.DQYIzER3.js";const m=JSON.parse('{"title":"文档标题","description":"","frontmatter":{},"headers":[],"relativePath":"模板.md","filePath":"模板.md","lastUpdated":1711603658000}'),r={name:"模板.md"},s=o("",8),c=[s];function i(l,n,d,_,h,p){return e(),t("div",null,c)}const b=a(r,[["render",i]]);export{m as __pageData,b as default};
