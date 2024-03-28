@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.DQYIzER3.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"系统设置/商品管理/项目类别管理.md","filePath":"系统设置/商品管理/项目类别管理.md","lastUpdated":null}'),r={name:"系统设置/商品管理/项目类别管理.md"};function o(s,_,n,c,d,p){return a(),t("div")}const m=e(r,[["render",o]]);export{l as __pageData,m as default};
