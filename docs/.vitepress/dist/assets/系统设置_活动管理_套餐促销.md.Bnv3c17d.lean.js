@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.DQYIzER3.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"系统设置/活动管理/套餐促销.md","filePath":"系统设置/活动管理/套餐促销.md","lastUpdated":1711617065000}'),r={name:"系统设置/活动管理/套餐促销.md"};function o(s,c,n,_,d,p){return a(),t("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
