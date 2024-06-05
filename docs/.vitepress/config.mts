@@ -7,6 +7,15 @@ export default defineConfig({
   title: "成大软件Wiki",
   description: "成大软件操作指南",
   head: [
+    [
+      'script',
+      {
+        async: true,
+        defer: true,
+        src: 'http://123.60.71.32:40205/tracker.js',
+        'data-website-id': 'clx1br3mx000clj4lhsrzhjwv'
+      }
+    ],
     //网站图标
     ['link', { rel: 'icon', href: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/symbol.svg' }]
   ],
