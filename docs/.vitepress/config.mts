@@ -185,6 +185,10 @@ export default defineConfig({
                       text: "如何修改密码",
                       link: "/常见问题/如何修改密码",
                   },
+                  {
+                    text: "成大服务保活",
+                    link: "/常见问题/成大服务保活",
+                },
               ],
           },
       ],
