@@ -159,6 +159,14 @@ export default defineConfig({
           { text: '硬件接口', link: '/接口管理/硬件接口/爱莎中控鞋柜+捷成安闸机' },
          
         ]
+      },
+      { 
+        text: '线上平台', 
+        items: [
+          { text: '微信平台', link: '/线上平台/微信平台/微信报表' },
+          { text: '票务平台', link: '/线上平台/票务平台/抖音接口' },
+         
+        ]
       }
     ],
     //左侧边栏
@@ -393,6 +401,36 @@ export default defineConfig({
                   },
               ],
           },
+      ],
+      "/线上平台/": [
+          {
+              text: "线上平台",
+              items: [
+              ],
+          },
+          {
+              text: "微信平台",
+              collapsed: true,
+              items: [
+                  {
+                      text: "微信报表",
+                      link: "/线上平台/微信平台/微信报表",
+                  },
+                  
+              ],
+          },
+          {
+            text: "票务平台",
+            collapsed: true,
+            items: [
+                {
+                    text: "抖音接口",
+                    link: "/线上平台/票务平台/抖音接口",
+                },
+                
+            ],
+        },
+          
       ]
      
   },  
