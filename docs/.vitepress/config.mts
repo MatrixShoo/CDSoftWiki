@@ -424,6 +424,10 @@ export default defineConfig({
                       text: "微信报表",
                       link: "/线上平台/微信平台/微信报表",
                   },
+                  {
+                    text: "小程序搭建",
+                    link: "/线上平台/微信平台/微信小程序搭建",
+                },
                   
               ],
           },
