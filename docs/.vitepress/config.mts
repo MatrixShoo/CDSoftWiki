@@ -426,7 +426,7 @@ export default defineConfig({
                   },
                   {
                     text: "小程序搭建",
-                    link: "/线上平台/微信平台/微信小程序搭建",
+                    link: "/线上平台/微信平台/小程序搭建",
                 },
                   
               ],
