@@ -150,8 +150,7 @@ export default defineConfig({
         items: [
           { text: '厅牌管理', link: '/系统设置/厅牌管理/如何增加厅牌类别' },
           { text: '商品管理', link: '/系统设置/商品管理/项目类别管理' },
-          { text: '活动管理', link: '/系统设置/活动管理/免项促销' },
-          { text: '环境设置', link: '/系统设置/数据导入/软件程序打包' },
+          { text: '活动管理', link: '/系统设置/活动管理/免项促销' }
         ]
       },
       { 
@@ -379,22 +378,7 @@ export default defineConfig({
               ,
               
           ],
-        },
-        {
-          text: "环境设置",
-          collapsed: true,
-          items: [
-              {
-                  text: "程序打包",
-                  link: "/系统设置/数据导入/软件程序打包",
-              },
-              {
-                text: "数据导入",
-                link: "/系统设置/数据导入/基础数据导入",
-              },                       
-              
-          ],
-        },
+        }
         
     ],
     "/接口管理/": [
@@ -447,10 +431,6 @@ export default defineConfig({
                   {
                     text: "扫码点餐",
                     link: "/线上平台/微信平台/扫码点餐设置",
-                  },
-                  {
-                    text: "密码保护",
-                    link: "/线上平台/微信平台/密码保护",
                   },
               ],
           },

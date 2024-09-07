@@ -1,19 +1,20 @@
-<script setup lang="ts">
-import { useData } from 'vitepress';
-import DefaultTheme from 'vitepress/theme';
-import { nextTick, provide } from 'vue';
-import PasswordProtect from './components/PasswordProtect.vue'; // 导入组件
+<!-- .vitepress/theme/Layout.vue -->
 
-const { page, isDark } = useData(); // 使用 useData 获取页面数据
+<script setup lang="ts">
+import { useData } from 'vitepress'
+import DefaultTheme from 'vitepress/theme'
+import { nextTick, provide } from 'vue'
+
+const { isDark } = useData()
 
 const enableTransitions = () =>
   'startViewTransition' in document &&
-  window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+  window.matchMedia('(prefers-reduced-motion: no-preference)').matches
 
 provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   if (!enableTransitions()) {
-    isDark.value = !isDark.value;
-    return;
+    isDark.value = !isDark.value
+    return
   }
 
   const clipPath = [
@@ -22,12 +23,12 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       Math.max(x, innerWidth - x),
       Math.max(y, innerHeight - y)
     )}px at ${x}px ${y}px)`
-  ];
+  ]
 
   await document.startViewTransition(async () => {
-    isDark.value = !isDark.value;
-    await nextTick();
-  }).ready;
+    isDark.value = !isDark.value
+    await nextTick()
+  }).ready
 
   document.documentElement.animate(
     { clipPath: isDark.value ? clipPath.reverse() : clipPath },
@@ -36,24 +37,15 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       easing: 'ease-in',
       pseudoElement: `::view-transition-${isDark.value ? 'old' : 'new'}(root)`
     }
-  );
-});
+  )
+})
 </script>
 
 <template>
-  <div>
-    <!-- 根据页面的 frontmatter.protected 属性决定是否使用密码保护组件 -->
-    <PasswordProtect v-if="page.frontmatter.protected">
-      <DefaultTheme.Layout />
-    </PasswordProtect>
-    <template v-else>
-      <DefaultTheme.Layout />
-    </template>
-  </div>
+  <DefaultTheme.Layout />
 </template>
 
 <style>
-/* 你的样式可以保留原样 */
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
