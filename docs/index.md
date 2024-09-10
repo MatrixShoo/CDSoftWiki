@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "成大软件Wiki"
-  text: "Cheng Da Software Wiki"
-  tagline: 成大软件，您专属的智慧经营专家
+  name: "软件指南Wiki"
+  text: "Software Wiki"
+  tagline: 软件操作设置指南
   actions:
     - theme: brand
       text: 营业前台

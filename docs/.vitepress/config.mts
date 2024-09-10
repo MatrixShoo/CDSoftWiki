@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
-  title: "成大软件Wiki",
-  description: "成大软件操作指南",
+  title: "软件指南Wiki",
+  description: "软件操作指南",
   head: [
     [
       'script',
@@ -134,7 +134,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     //菜单栏
     nav: [
-      { text: '官网首页', link: 'https://cdsoftcn.com/' },
       { text: 'Wiki首页', link: '/' },
       { text: '常见问题', link: '/常见问题/手牌占用问题' },
       {
