@@ -163,7 +163,7 @@ export default defineConfig({
       { 
         text: '线上平台', 
         items: [
-          { text: '微信平台', link: '/线上平台/微信平台/微信报表' },
+          { text: '微信平台', link: '/线上平台/微信平台/微信报表设置' },
           { text: '票务平台', link: '/线上平台/票务平台/抖音接口' },
          
         ]
