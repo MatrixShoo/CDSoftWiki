@@ -448,7 +448,7 @@ export default defineConfig({
               items: [
                   {
                       text: "微信报表",
-                      link: "/线上平台/微信平台/微信报表",
+                      link: "/线上平台/微信平台/微信报表设置",
                   },
                   {
                     text: "小程序搭建",
@@ -457,6 +457,10 @@ export default defineConfig({
                   {
                     text: "扫码点餐",
                     link: "/线上平台/微信平台/扫码点餐设置",
+                  },
+                  {
+                    text: "扫码取号",
+                    link: "/线上平台/微信平台/扫码取号设置",
                   },
               ],
           },
