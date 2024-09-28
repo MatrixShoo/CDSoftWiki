@@ -402,6 +402,10 @@ export default defineConfig({
               {
                 text: "技师信息管理",
                 link: "/系统设置/人事管理/技师信息管理",
+              },
+              {
+                text: "技师提成管理",
+                link: "/系统设置/人事管理/技师提成管理",
               },                                       
           ],
         }
@@ -461,6 +465,10 @@ export default defineConfig({
                   {
                     text: "扫码取号",
                     link: "/线上平台/微信平台/扫码取号设置",
+                  },
+                  {
+                    text: "公众号菜单管理",
+                    link: "/线上平台/微信平台/公众号菜单管理",
                   },
               ],
           },
