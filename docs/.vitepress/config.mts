@@ -467,7 +467,7 @@ export default defineConfig({
                     link: "/线上平台/微信平台/扫码取号设置",
                   },
                   {
-                    text: "公众号菜单管理",
+                    text: "菜单管理",
                     link: "/线上平台/微信平台/公众号菜单管理",
                   },
               ],
