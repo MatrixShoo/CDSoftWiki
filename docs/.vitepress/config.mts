@@ -426,6 +426,10 @@ export default defineConfig({
                 text: "折扣方案管理",
                 link: "/系统设置/会员管理/折扣方案管理",
               },
+              {
+                text: "充值提成管理",
+                link: "/系统设置/会员管理/充值提成管理",
+              },
                                                    
           ],
         }
