@@ -384,7 +384,11 @@ export default defineConfig({
                 text: "套餐促销管理",
                 link: "/系统设置/活动管理/套餐促销",
               },
-              ,
+              {
+                text: "票种票券管理",
+                link: "/系统设置/活动管理/票种管理",
+              }
+              
               
           ],
         },
