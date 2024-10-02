@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: 常见问题
       link: /常见问题/手牌占用问题
+    - theme: brand
+      text: 后台管理
+      link: /系统设置/商品管理/项目类别管理
 
 features:
   - title: OTA票务
