@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 营业前台
-      link: /营业前台/前台开牌
+      link: /营业前台/桑拿水会/前台开牌
     - theme: alt
       text: 常见问题
       link: /常见问题/手牌占用问题
