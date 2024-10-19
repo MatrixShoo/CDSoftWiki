@@ -166,6 +166,7 @@ export default defineConfig({
         items: [
           { text: '微信平台', link: '/线上平台/微信平台/微信报表设置' },
           { text: '票务平台', link: '/线上平台/票务平台/抖音接口' },
+          { text: '短信平台', link: '/线上平台/短信平台/短信平台' },
          
         ]
       }
@@ -505,6 +506,17 @@ export default defineConfig({
                 
             ],
         },
+        {
+          text: "短信平台",
+          collapsed: true,
+          items: [
+              {
+                  text: "短信平台功能",
+                  link: "/线上平台/短信平台/短信平台",
+              },
+              
+          ],
+      },
           
       ]
      
