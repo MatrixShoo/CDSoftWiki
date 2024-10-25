@@ -497,6 +497,10 @@ export default defineConfig({
                     text: "小程序装修",
                     link: "/线上平台/微信平台/小程序装修",
                   },
+                  {
+                    text: "商城售票",
+                    link: "/线上平台/微信平台/商城售票",
+                  },
               ],
           },
           {
