@@ -501,6 +501,10 @@ export default defineConfig({
                     text: "商城售票",
                     link: "/线上平台/微信平台/商城售票",
                   },
+                  {
+                    text: "商城订单",
+                    link: "/线上平台/微信平台/商城订单",
+                  },
               ],
           },
           {
