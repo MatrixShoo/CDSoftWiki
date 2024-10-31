@@ -433,6 +433,10 @@ export default defineConfig({
                 text: "充值提成管理",
                 link: "/系统设置/会员管理/充值提成管理",
               },
+              {
+                text: "会员送券管理",
+                link: "/系统设置/会员管理/会员送券管理",
+              },
                                                    
           ],
         }
