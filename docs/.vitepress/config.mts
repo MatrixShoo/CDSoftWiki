@@ -196,8 +196,8 @@ export default defineConfig({
                       link: "/常见问题/如何修改密码",
                   },
                   {
-                    text: "成大服务保活",
-                    link: "/常见问题/系统服务保活",
+                    text: "系统服务保活",
+                    link: "/常见问题/成大服务保活",
                   },
                   {
                     text: "更换双屏图片",
