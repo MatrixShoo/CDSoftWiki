@@ -197,7 +197,7 @@ export default defineConfig({
                   },
                   {
                     text: "成大服务保活",
-                    link: "/常见问题/成大服务保活",
+                    link: "/常见问题/系统服务保活",
                   },
                   {
                     text: "更换双屏图片",
