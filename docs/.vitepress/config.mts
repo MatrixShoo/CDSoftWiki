@@ -525,6 +525,10 @@ export default defineConfig({
                     text: "商城订单",
                     link: "/线上平台/微信平台/商城订单",
                   },
+                  {
+                    text: "小程序码",
+                    link: "/线上平台/微信平台/小程序码",
+                  },
               ],
           },
           {
