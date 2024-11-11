@@ -1,8 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { sendNotification } from './webhook'
 
-
-// https://vitepress.dev/reference/site-config
-
+let updatedFiles = new Set();  // 确保初始化 updatedFiles
 export default defineConfig({
   title: "软件指南Wiki",
   description: "软件操作指南",
@@ -37,6 +36,34 @@ export default defineConfig({
       // 默认禁用图片懒加载
       lazyLoading: true
     }
+  },
+  //添加文档新增和更新后推送该企业微信消息
+  async transformHtml(code, id, ctx) {
+    // 排除 'index.md' 和 '404.md'
+    const excludedPages = ['index.md', '404.md'];
+    if (!excludedPages.includes(ctx.pageData.relativePath)) {
+      updatedFiles.add({
+        path: ctx.pageData.relativePath,
+        title: ctx.pageData.title || ctx.pageData.relativePath.replace('.md', ''),
+        description: ctx.pageData.description
+      });
+    }
+  
+    // 在最后一个页面处理完成时发送通知
+    if (ctx.pageData.relativePath === 'index.md' && updatedFiles.size > 0) {
+      console.log('推送文档更新通知，更新文件:', Array.from(updatedFiles));
+      await sendNotification({
+        webhookUrl: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send',
+        botKey: '7d1af431-b668-4cee-a9e7-f36fbdebc02b',
+        siteUrl: 'https://wiki.cdsoftcn.com',
+        updatedFiles: Array.from(updatedFiles)
+      });
+  
+      // 清空 updatedFiles 集合
+      updatedFiles.clear();
+    }
+  
+    return code;
   },
   themeConfig: {
     logo: 'https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/wp-content/uploads/2024/01/cropped-android-chrome-512x512-2.png',
@@ -529,6 +556,10 @@ export default defineConfig({
                     text: "小程序码",
                     link: "/线上平台/微信平台/小程序码",
                   },
+                  {
+                    text: "测试demo",
+                    link: "/线上平台/微信平台/测试demo",
+                  },
               ],
           },
           {
@@ -563,3 +594,7 @@ export default defineConfig({
   },  
   }
 })
+function transformHtml(code: any, id: any, ctx: any) {
+  throw new Error('Function not implemented.');
+}
+
