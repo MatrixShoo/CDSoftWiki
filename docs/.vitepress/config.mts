@@ -557,8 +557,8 @@ export default defineConfig({
                     link: "/线上平台/微信平台/小程序码",
                   },
                   {
-                    text: "测试demo",
-                    link: "/线上平台/微信平台/测试demo",
+                    text: "自动回复",
+                    link: "/线上平台/微信平台/自动回复",
                   },
               ],
           },
