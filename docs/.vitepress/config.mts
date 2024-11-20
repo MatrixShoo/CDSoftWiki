@@ -560,6 +560,10 @@ export default defineConfig({
                     text: "自动回复",
                     link: "/线上平台/微信平台/自动回复",
                   },
+                  {
+                    text: "会员积分",
+                    link: "/线上平台/微信平台/会员积分",
+                  },
               ],
           },
           {
