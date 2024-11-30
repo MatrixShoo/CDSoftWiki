@@ -156,7 +156,7 @@ export default defineConfig({
     //添加主页页脚
     footer: {
       message: '<a href="https://vitepress.dev/zh/" target="_blank">基于VitePress生成</a>',
-      copyright: 'Copyright © 2024 <a href="https://cdsoftcn.com/" target="_blank">杭州成大经纬科技有限责任公司</a>'
+      copyright: 'Copyright © 2024 <a href="https://cdsoftcn.com/" target="_blank">杭州成大经纬科技有限公司</a>'
     },
     // https://vitepress.dev/reference/default-theme-config
     //菜单栏
