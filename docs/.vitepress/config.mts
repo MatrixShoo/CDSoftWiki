@@ -314,7 +314,12 @@ export default defineConfig({
             {
               text: "前台查询",
               link: "/营业前台/桑拿水会/前台查询",
+            },
+            {
+              text: "房间管理",
+              link: "/营业前台/桑拿水会/房间管理",
             }
+            
             ],
           },
           {
