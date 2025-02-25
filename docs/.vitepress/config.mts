@@ -140,6 +140,7 @@ export default defineConfig({
           { text: '桑拿水会', link: '/营业前台/桑拿水会/前台开牌' },
           { text: '会籍管理', link: '/营业前台/会籍管理/如何办理会员' },
           { text: '财务预收', link: '/营业前台/财务预收/账单操作' },
+          { text: '票券管理', link: '/营业前台/票券管理/票券管理' },
           { text: '签单挂帐', link: '/营业前台/签单挂账/签单挂账' },
           
         ]
@@ -332,6 +333,16 @@ export default defineConfig({
             {
               text: "账单操作",
               link: "/营业前台/财务预收/账单操作",
+            },         
+            ],
+          },
+          {
+            text: "票券管理",
+            collapsed: true,
+            items: [
+            {
+              text: "账单操作",
+              link: "/营业前台/票券管理/票券管理",
             },         
             ],
           },
