@@ -138,7 +138,8 @@ export default defineConfig({
         text: '营业前台',
         items: [
           { text: '桑拿水会', link: '/营业前台/桑拿水会/前台开牌' },
-          { text: '会籍管理', link: '/营业前台/会籍管理/如何办理会员' }
+          { text: '会籍管理', link: '/营业前台/会籍管理/如何办理会员' },
+          { text: '财务预收', link: '/营业前台/财务预收/账单操作' }
           
         ]
       },
@@ -321,6 +322,16 @@ export default defineConfig({
               text: "会员群发短信",
               link: "/营业前台/会籍管理/会员群发短信",
             }
+            ],
+          },
+          {
+            text: "财务预收",
+            collapsed: true,
+            items: [
+            {
+              text: "账单操作",
+              link: "/营业前台/财务预收/账单操作",
+            },         
             ],
           },
       ],
