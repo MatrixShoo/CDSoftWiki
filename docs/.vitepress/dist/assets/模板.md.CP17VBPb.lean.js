@@ -1,0 +1,1 @@
+import{_ as t,c as e,o,ag as r}from"./chunks/framework.D_tDIJsW.js";const p=JSON.parse('{"title":"文档标题","description":"","frontmatter":{},"headers":[],"relativePath":"模板.md","filePath":"模板.md","lastUpdated":1740549137000}'),s={name:"模板.md"};function l(i,a,c,n,d,h){return o(),e("div",null,a[0]||(a[0]=[r("",8)]))}const u=t(s,[["render",l]]);export{p as __pageData,u as default};
