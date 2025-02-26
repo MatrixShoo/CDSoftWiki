@@ -18,7 +18,7 @@ hero:
       link: /系统设置/商品管理/项目类别管理
     - theme: alt
       text: 库房管理
-      link: /库房管理/库存管理/库房入库
+      link: /库房管理/库存管理/库存操作
     - theme: brand
       text: 线上平台
       link: /线上平台/微信平台/商城售票

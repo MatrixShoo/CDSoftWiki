@@ -149,7 +149,7 @@ export default defineConfig({
         text: '库房管理',
         items: [
           { text: '基础数据', link: '/库房管理/基础数据/仓库设置' },
-          { text: '库存操作', link: '/库房管理/库存操作/库房入库' },
+          { text: '库存操作', link: '/库房管理/库存操作/库存操作' },
          
           
         ]
@@ -402,8 +402,12 @@ export default defineConfig({
             items: [
                 {
                     text: "库房入库",
-                    link: "/库房管理/库存管理/库房入库",
+                    link: "/库房管理/库存管理/库存操作",
                 },
+                {
+                  text: "变动单据",
+                  link: "/库房管理/库存管理/变动单据",
+              },
               
             ],
           },
