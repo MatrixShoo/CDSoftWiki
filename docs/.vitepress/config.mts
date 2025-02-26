@@ -134,7 +134,7 @@ export default defineConfig({
     nav: [
       { text: 'Wiki首页', link: '/' },
       { text: '常见问题', link: '/常见问题/手牌占用问题' },
-      {
+      {// 二级菜单
         text: '营业前台',
         items: [
           { text: '桑拿水会', link: '/营业前台/桑拿水会/前台开牌' },
@@ -145,7 +145,16 @@ export default defineConfig({
           
         ]
       },
-      { 
+      {// 二级菜单
+        text: '库房管理',
+        items: [
+          { text: '基础数据', link: '/库房管理/基础数据/仓库设置' },
+          { text: '库存操作', link: '/库房管理/库存操作/库房入库' },
+         
+          
+        ]
+      },
+      {// 二级菜单
         text: '系统设置', 
         items: [
           { text: '厅牌管理', link: '/系统设置/厅牌管理/如何增加厅牌类别' },
@@ -162,7 +171,7 @@ export default defineConfig({
          
         ]
       },
-      { 
+      {// 二级菜单
         text: '线上平台', 
         items: [
           { text: '微信平台', link: '/线上平台/微信平台/微信报表' },
@@ -213,7 +222,7 @@ export default defineConfig({
               items: [
               ],
           },          
-          {
+          {//桑拿水会
             text: "桑拿水会",
             collapsed: true,
             items: [
@@ -296,7 +305,7 @@ export default defineConfig({
             
             ],
           },
-          {
+          {//会籍管理
             text: "会籍管理",
             collapsed: true,
             items: [
@@ -326,7 +335,7 @@ export default defineConfig({
             }
             ],
           },
-          {
+          {//财务预收
             text: "财务预收",
             collapsed: true,
             items: [
@@ -336,7 +345,7 @@ export default defineConfig({
             },         
             ],
           },
-          {
+          {//票券管理
             text: "票券管理",
             collapsed: true,
             items: [
@@ -346,7 +355,7 @@ export default defineConfig({
             },         
             ],
           },
-          {
+          {//签单挂帐
             text: "签单挂帐",
             collapsed: true,
             items: [
@@ -357,13 +366,54 @@ export default defineConfig({
             ],
           },
       ],
+      "/库房管理/": [
+          {
+              text: "库房管理",
+              items: [
+              ],
+          },
+          {//基础数据
+              text: "基础数据",
+              collapsed: true,
+              items: [
+                  {
+                      text: "仓库设置",
+                      link: "/库房管理/库存管理/仓库设置",
+                  },
+                  {
+                    text: "物料类别",
+                    link: "/库房管理/库存管理/物料类别",
+                  },
+                  {
+                    text: "物料设置",
+                    link: "/库房管理/库存管理/物料设置",
+                  },
+                  {
+                    text: "供应商管理",
+                    link: "/库房管理/库存管理/供应商管理",
+                  },
+                
+              ],
+          },
+          {//库存管理
+            text: "库存管理",
+            collapsed: true,
+            items: [
+                {
+                    text: "库房入库",
+                    link: "/库房管理/库存管理/库房入库",
+                },
+              
+            ],
+          },
+      ],
       "/系统设置/": [
-        {
+          {
             text: "后台设置文档",
             items: [
             ],
-        },
-        {
+          },
+          {//厅牌管理
             text: "厅牌管理",
             collapsed: true,
             items: [
@@ -376,8 +426,8 @@ export default defineConfig({
                   link: "/系统设置/厅牌管理/如何增加厅牌号码",
               }
             ],
-        }, 
-        {
+          }, 
+          {//商品管理
           text: "商品管理",
           collapsed: true,
           items: [
@@ -402,8 +452,8 @@ export default defineConfig({
                 link: "/系统设置/商品管理/过夜费用管理",
               },
           ],
-        },
-        {
+          },
+          {//活动管理
           text: "活动管理",
           collapsed: true,
           items: [
@@ -426,8 +476,8 @@ export default defineConfig({
               
               
           ],
-        },
-        {
+          },
+          {//人事管理
           text: "人事管理",
           collapsed: true,
           items: [
@@ -456,8 +506,8 @@ export default defineConfig({
                 link: "/系统设置/人事管理/员工提成管理",
               },                                       
           ],
-        },
-        {
+          },
+          {//会员管理
           text: "会员管理",
           collapsed: true,
           items: [
@@ -483,16 +533,16 @@ export default defineConfig({
               },
                                                    
           ],
-        }
+          }
         
-    ],
-    "/接口管理/": [
+      ],
+      "/接口管理/": [
           {
               text: "接口管理",
               items: [
               ],
           },
-          {
+          {//硬件接口
               text: "硬件接口",
               collapsed: true,
               items: [
@@ -529,7 +579,7 @@ export default defineConfig({
               items: [
               ],
           },
-          {
+          {//微信平台
               text: "微信平台",
               collapsed: true,
               items: [
@@ -579,7 +629,7 @@ export default defineConfig({
                   },
               ],
           },
-          {
+          {//票务平台
             text: "票务平台",
             collapsed: true,
             items: [
@@ -596,8 +646,8 @@ export default defineConfig({
                   link: "/线上平台/票务平台/乐活游接口",
                 },
             ],
-        },
-        {
+          },
+          {//短信平台
           text: "短信平台",
           collapsed: true,
           items: [
@@ -607,7 +657,7 @@ export default defineConfig({
               },
               
           ],
-      },
+          },
           
       ]
      
