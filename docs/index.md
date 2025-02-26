@@ -25,7 +25,7 @@ hero:
 
 features:
   - icon: 
-      src: https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/202502261506033.svg
+      src: https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/202502261524582.svg
     title: OTA票务
     details: 为您连接了主流票务平台的核销接口，旨在提供便捷的验票和核销服务。我们的服务覆盖了包括美团、抖音、口碑、票付通、乐活游等在内的众多渠道。
   - icon:
