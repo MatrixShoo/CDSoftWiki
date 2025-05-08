@@ -178,6 +178,7 @@ export default defineConfig({
         text: '接口管理', 
         items: [
           { text: '硬件接口', link: '/接口管理/硬件接口/爱莎中控鞋柜+捷成安闸机' },
+          { text: '报钟器指南', link: '/接口管理/报钟器指南/技师上钟' },
          
         ]
       },
@@ -596,6 +597,21 @@ export default defineConfig({
                   },
               ],
           },
+          {//报钟器指南
+            text: "报钟器指南",
+            collapsed: true,
+            items: [
+                {
+                    text: "技师上钟",
+                    link: "/接口管理/报钟器指南/技师上钟",
+                },
+                {
+                  text: "技师下钟",
+                  link: "/接口管理/报钟器指南/技师下钟",
+                },
+               
+            ],
+        },
       ],
       "/线上平台/": [
           {
