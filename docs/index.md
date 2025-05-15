@@ -51,7 +51,7 @@ import { onMounted } from 'vue'
 const downloadFile = () => {
   const timestamp = new Date().getTime() // 防止缓存
   const link = document.createElement('a')
-  link.href = `http://60.191.14.154:12345/.../客户端.exe?t=${timestamp}`
+  link.href = `http://60.191.14.154:12345/d/SAAS%E8%BD%AF%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%9C%8D%E5%8A%A1/%E6%88%90%E5%A4%A7%E8%BD%AF%E4%BB%B6/%E6%88%90%E5%A4%A7%E8%BD%AF%E4%BB%B6-PC%E5%AE%A2%E6%88%B7%E7%AB%AF.exe`
   link.download = '成大软件-PC客户端.exe'
   link.style.display = 'none'
   document.body.appendChild(link)
