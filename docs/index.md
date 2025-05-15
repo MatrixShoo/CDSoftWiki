@@ -45,21 +45,35 @@ features:
     details: 系统具备完善的库房管理流程，精准的吧台递减，帮助您优化库存和成本的管理管控！
   
 ---
-
 <script setup>
+import { onMounted } from 'vue'
+
 const downloadFile = () => {
-  const link = document.createElement('a');
-  link.href = 'http://60.191.14.154:12345/d/SAAS%E8%BD%AF%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%9C%8D%E5%8A%A1/%E6%88%90%E5%A4%A7%E8%BD%AF%E4%BB%B6/%E6%88%90%E5%A4%A7%E8%BD%AF%E4%BB%B6-PC%E5%AE%A2%E6%88%B7%E7%AB%AF.exe';
-  link.download = '成大软件-PC客户端.exe'; // 指定下载文件名
-  link.style.display = 'none';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+  const timestamp = new Date().getTime() // 防止缓存
+  const link = document.createElement('a')
+  link.href = `http://60.191.14.154:12345/.../客户端.exe?t=${timestamp}`
+  link.download = '成大软件-PC客户端.exe'
+  link.style.display = 'none'
+  document.body.appendChild(link)
+  
+  try {
+    link.click()
+  } catch (e) {
+    alert('下载失败，请检查浏览器设置或联系管理员')
+  } finally {
+    document.body.removeChild(link)
+  }
+}
+
+onMounted(() => {
+  const img = document.querySelector('.VPImage.image-src')
+  img?.addEventListener('click', downloadFile)
+  img?.setAttribute('title', '点击下载客户端')
+})
 </script>
 
 <style>
-.hero img {
-  cursor: pointer;
+:root {
+  --vp-home-hero-image-filter: blur(0px); /* 解除图片滤镜影响事件 */
 }
 </style>
