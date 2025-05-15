@@ -613,6 +613,10 @@ export default defineConfig({
                   text: "技师下钟",
                   link: "/接口管理/报钟器指南/技师下钟",
                 },
+                {
+                  text: "派遣技师",
+                  link: "/接口管理/报钟器指南/派遣技师",
+                },
                
             ],
         },
