@@ -7,7 +7,7 @@ hero:
   text: "Software Wiki"
   tagline: 软件操作设置指南
   image:
-    src: https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/logo.png.png
+    src: https://wiki-cdsoft.oss-cn-hangzhou.aliyuncs.com/download_client.png
     alt: download
   actions:
     - theme: brand
