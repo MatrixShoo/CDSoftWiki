@@ -617,6 +617,10 @@ export default defineConfig({
                   text: "派遣技师",
                   link: "/接口管理/报钟器指南/派遣技师",
                 },
+                {
+                  text: "商品点单",
+                  link: "/接口管理/报钟器指南/商品点单",
+                },
                
             ],
         },
