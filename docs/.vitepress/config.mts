@@ -185,7 +185,9 @@ export default defineConfig({
       { // 钟房管理
         text: '钟房管理', 
         items: [
-          { text: '排钟准备', link: '/钟房管理/排钟准备' },         
+          { text: '排钟准备', link: '/钟房管理/排钟准备' },
+          { text: '技师班次', link: '/钟房管理/技师班次' },     
+          { text: '钟房管理', link: '/钟房管理/钟房管理' },              
         ]
       },
       
