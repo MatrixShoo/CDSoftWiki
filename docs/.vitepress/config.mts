@@ -183,6 +183,13 @@ export default defineConfig({
          
         ]
       },
+      { // 钟房管理
+        text: '钟房管理', 
+        items: [
+          { text: '钟房管理', link: '/钟房管理/技师班次' },
+                   
+        ]
+      },
       
     ],
     //左侧边栏
@@ -649,19 +656,7 @@ export default defineConfig({
                
             ],
           },
-          {//报钟器指南
-            text: "钟房管理",
-            collapsed: true,
-            items: [
-                {
-                    text: "技师班次",
-                    link: "/接口管理/钟房管理/技师班次",
-                },
-               
-              
-               
-            ],
-          },
+          
       ],
       "/线上平台/": [
           {
@@ -749,7 +744,25 @@ export default defineConfig({
           ],
           },
           
-      ]
+      ],
+       "/钟房管理/": [
+          {
+              text: "钟房管理",
+              items: [
+              ],
+          },
+          {//钟房管理
+              text: "钟房管理",
+              collapsed: true,
+              items: [
+                  {
+                      text: "技师班次",
+                      link: "/钟房管理/技师班次",
+                  },
+                
+              ],
+          },
+      ],
      
   },  
   }
